@@ -29,6 +29,7 @@
                             Hi, {{ auth()->user()->name }}
                         </a>
                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/dashboard/dashboard">Dashboard</a></li>
                             <li><a class="dropdown-item" href="/logout">Logout</a></li>
                         </ul>
                     @else

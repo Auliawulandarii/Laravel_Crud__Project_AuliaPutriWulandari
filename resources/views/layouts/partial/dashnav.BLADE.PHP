@@ -255,18 +255,25 @@
                     Student
                 </a>
             </li>
-
           <hr class="my-3">
-
           <ul class="nav flex-column mb-auto">
-
             </li>
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="/logout">
-                <svg class="bi"><use xlink:href="#door-closed"/></svg>
-                Sign out
-              </a>
+                <a class="nav-link d-flex align-items-center gap-2" href="#" onclick="confirmLogout()">
+                    <svg class="bi"><use xlink:href="#door-closed"/></svg>
+                    Sign out
+                </a>
             </li>
+
+            <script>
+                function confirmLogout() {
+                    var confirmLogout = confirm("Are you sure you want to log out?");
+                    if (confirmLogout) {
+                        window.location.href = "/logout";
+                    } else {
+                    }
+                }
+            </script>
           </ul>
         </div>
       </div>
